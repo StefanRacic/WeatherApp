@@ -4,7 +4,7 @@ function callApi() {
   let city = document.querySelector(".weatherInput").value;
 
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=f22556600fe944aa9c6db91bdf73fbaf&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=f22556600fe944aa9c6db91bdf73fbaf&units=metric`
   )
     .then(data => {
       return data.json();
