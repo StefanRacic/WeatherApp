@@ -11,7 +11,8 @@ function callApi() {
     })
     .then(res => {
       console.log(res);
-      let temp = Math.round(res.main.temp);
+      let round = Math.round(res.main.temp);
+      let temp = round;
       let min = Math.round(res.main.temp_min);
       let max = Math.round(res.main.temp_max);
       let longDesc = res.weather[0].main;
