@@ -5,7 +5,11 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  padding-top: 10rem;
+  padding-top: 7rem;
+  animation: heading;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out;
 }
 .description {
   display: flex;
@@ -21,6 +25,15 @@
 .title {
   font-size: 4rem;
   margin-bottom: 3rem;
+  position: relative;
+}
+@keyframes heading {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 #btnSearch {
   padding: 0.5rem;
