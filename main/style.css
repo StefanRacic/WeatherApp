@@ -12,11 +12,6 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   padding-top: 7rem;
-  top: -700px;
-  animation: heading;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
 }
 .description {
   display: flex;
@@ -36,14 +31,7 @@ body {
   margin-bottom: 3rem;
   position: relative;
 }
-@keyframes heading {
-  0% {
-    top: -700px;
-  }
-  100% {
-    top: 0px;
-  }
-}
+
 #btnSearch {
   padding: 0.5rem;
   border-radius: 5%;

@@ -19,15 +19,17 @@ function callApi() {
       let shortDesc = res.weather[0].description;
 
       document.querySelector(".output").innerHTML = `
-      <h1 class="temp">${temp}°</h1>
-      <img src="http://openweathermap.org/img/wn/${
+      <h1 class="temp animated fadeIn slow">${temp}°</h1>
+      <img class="animated fadeIn slow" src="http://openweathermap.org/img/wn/${
         res.weather[0].icon
       }@2x.png" alt="" />
       `;
-      document.querySelector(".minmax").innerHTML = `<h3>Min: ${min}</h3>
-      <h3>Max: ${max}</h3>`;
+      document.querySelector(
+        ".minmax"
+      ).innerHTML = `<h3 class="animated fadeInDown">Min: ${min}</h3>
+      <h3 class="animated fadeInDown">Max: ${max}</h3>`;
       document.querySelector(
         ".description"
-      ).innerHTML = `<p>${longDesc}</p> <p>${shortDesc}</p>`;
+      ).innerHTML = `<p class="animated fadeIn slow">${longDesc}</p> <p class="animated fadeIn slow">${shortDesc}</p>`;
     });
 }
